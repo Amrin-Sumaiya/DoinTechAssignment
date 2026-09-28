@@ -6,6 +6,9 @@ import man1 from "../assets/man1.png";
 import man2 from "../assets/man2.png";
 import man3 from "../assets/man3.png";
 import man4 from "../assets/man4.png";
+import man5 from "../assets/man5.png";
+import man6 from "../assets/man6.png";
+import man7 from "../assets/man7.png";
 
 const Hero = () => {
   return (
@@ -92,6 +95,7 @@ const Hero = () => {
           Unlock your creativity, gain valuable knowledge, and grow your
           business with our wide range of courses.
         </p>
+        <br />
       </div>
 
       {/* =========================================================
@@ -101,11 +105,11 @@ const Hero = () => {
         className="
           absolute
           z-50
-          top-[270px]
+          top-[290px]
           left-1/2
           -translate-x-1/2
           flex
-          items-center
+          items-center gap-2
         "
       >
         {/* Input */}
@@ -116,12 +120,13 @@ const Hero = () => {
             w-[272px]
             sm:w-[340px]
             md:w-[370px]
-            h-[32px]
+            h-[38px]
             bg-white
             rounded-full
           "
         >
-          <FiSearch className="ml-4 text-[11px] text-gray-400 flex-shrink-0" />
+          
+          <FiSearch className="ml-4 text-[16px] text-gray-400 flex-shrink-0" />
 
           <input
             type="text"
@@ -129,10 +134,10 @@ const Hero = () => {
             className="
               flex-1
               h-full
-              px-2
+              px-4
               bg-transparent
               outline-none
-              text-[9px]
+              text-[12px]
               text-gray-600
               placeholder:text-gray-400
             "
@@ -143,12 +148,12 @@ const Hero = () => {
         <button
           className="
             ml-[9px]
-            h-[30px]
-            px-[17px]
+            h-[38px]
+            px-[19px]
             rounded-full
             bg-[#dfff3f]
             text-black
-            text-[9px]
+            text-[12px]
             font-medium
             hover:bg-[#d2f331]
             transition
@@ -183,7 +188,7 @@ const Hero = () => {
         className="
           absolute
           z-30
-          left-[-30px]
+          left-[-20px]
           top-[169px]
           w-[112px]
           h-[43px]
@@ -197,7 +202,7 @@ const Hero = () => {
         className="
           absolute
           z-30
-          left-[-42px]
+          left-[-22px]
           top-[207px]
           w-[111px]
           h-[42px]
@@ -419,10 +424,10 @@ const Hero = () => {
         className="
           absolute
           z-50
-          left-[28%]
-          top-[375px]
-          w-[120px]
-          h-[42px]
+          left-[33%]
+          top-[420px]
+          w-[170px]
+          h-[62px]
           rounded-[9px]
           bg-white
           shadow-lg
@@ -431,11 +436,11 @@ const Hero = () => {
           text-black
         "
       >
-        <p className="text-[8px] font-medium leading-none">
+        <p className="text-[15px] font-medium leading-none">
           UI/UX Design
         </p>
 
-        <p className="text-[6px] text-gray-400 mt-[4px]">
+        <p className="text-[8px] text-gray-400 mt-[8px]">
           20 Courses • 1000+ Students
         </p>
       </div>
@@ -448,10 +453,10 @@ const Hero = () => {
         className="
           absolute
           z-50
-          right-[25.2%]
-          top-[382px]
-          w-[136px]
-          h-[78px]
+          right-[33.5%]
+          top-[435px]
+          w-[149px]
+          h-[95px]
           rounded-[9px]
           bg-white
           shadow-lg
@@ -460,7 +465,7 @@ const Hero = () => {
           text-black
         "
       >
-        <p className="text-[7px] text-gray-500">
+        <p className="text-[14px] text-gray-500">
           Learning Progress
         </p>
 
@@ -481,19 +486,19 @@ const Hero = () => {
         className="
           absolute
           z-50
-          left-[22.5%]
-          top-[492px]
-          w-[151px]
-          h-[71px]
+          left-[20.5%]
+          top-[552px]
+          w-[321px]
+          h-[111px]
           rounded-[10px]
           bg-white
           shadow-lg
-          px-[9px]
+          px-[19px]
           py-[8px]
           text-black
         "
       >
-        <p className="text-[8px] font-medium">
+        <p className="text-[15px] font-medium">
           Happy Students
         </p>
 
@@ -501,14 +506,14 @@ const Hero = () => {
           4.5 (240) ★
         </p>
 
-        <div className="flex items-center mt-[5px]">
+        <div className="flex items-center mt-[2px]">
 
           <img
             src={man1}
             alt=""
             className="
-              w-[22px]
-              h-[22px]
+              w-[42px]
+              h-[42px]
               rounded-full
               object-cover
               border-2
@@ -520,8 +525,8 @@ const Hero = () => {
             src={man2}
             alt=""
             className="
-              w-[22px]
-              h-[22px]
+              w-[42px]
+              h-[42px]
               rounded-full
               object-cover
               border-2
@@ -534,8 +539,8 @@ const Hero = () => {
             src={man3}
             alt=""
             className="
-              w-[22px]
-              h-[22px]
+              w-[42px]
+              h-[42px]
               rounded-full
               object-cover
               border-2
@@ -548,8 +553,34 @@ const Hero = () => {
             src={man4}
             alt=""
             className="
-              w-[22px]
-              h-[22px]
+              w-[42px]
+              h-[42px]
+              rounded-full
+              object-cover
+              border-2
+              border-white
+              -ml-[6px]
+            "
+          />
+                    <img
+            src={man5}
+            alt=""
+            className="
+              w-[42px]
+              h-[42px]
+              rounded-full
+              object-cover
+              border-2
+              border-white
+              -ml-[6px]
+            "
+          />
+         <img
+            src={man6}
+            alt=""
+            className="
+              w-[42px]
+              h-[42px]
               rounded-full
               object-cover
               border-2
@@ -558,11 +589,24 @@ const Hero = () => {
             "
           />
 
+          <img
+            src={man7}
+            alt=""
+            className="
+              w-[42px]
+              h-[42px]
+              rounded-full
+              object-cover
+              border-2
+              border-white
+              -ml-[6px]
+            "
+          />
           <div
             className="
-              ml-auto
-              w-[25px]
-              h-[25px]
+             -ml-[6px]
+              w-[45px]
+              h-[45px]
               rounded-full
               bg-[#dfff3f]
               flex
