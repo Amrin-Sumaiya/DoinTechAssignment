@@ -5,7 +5,7 @@ import AboutUs from '../components/AboutUs'
 import Services from '../components/Services'
 import WhyChooseUs from '../components/WhyChooseUs'
 import Packages from '../components/Packages'
-import TripOffer from '../components/TripOffer'
+import TutorialCard from '../components/TutorialCard'
 import CallToAction from '../components/CallToAction' 
 import Footer from '../components/Footer'
 
@@ -17,10 +17,11 @@ const HomePage = () => {
     <Hero />
    
     <Packages />
+    <TutorialCard />
      <AboutUs />
     <Services />
     <WhyChooseUs />
-    <TripOffer />
+    
     <CallToAction />
     <Footer />
     </>

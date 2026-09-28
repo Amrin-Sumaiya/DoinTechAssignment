@@ -1,73 +1,188 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
 
-import "swiper/css";
-
-import bg1 from "../assets/place1.jpg";
-import bg2 from "../assets/place22.jpg";
-import bg3 from "../assets/place33.jpg";
-import woman from "../assets/boy.png";
+import log1 from "../assets/log1.png";
+import log2 from "../assets/log2.png";
+import log3 from "../assets/log3.png";
+import log4 from "../assets/log4.png";
+import log5 from "../assets/log5.png";
 
 const Packages = () => {
+  const logos = [log1, log2, log3, log4, log5];
+
+  const categories = [
+    "Featured",
+    "Music",
+    "Drawing & Painting",
+    "Marketing",
+    "Animation",
+    "Social Media",
+    "UI/UX Design",
+    "Creative Marketing",
+    "Digital Illustration",
+    "Film & Video",
+    "Crafts",
+    "Freelance & Entrepreneurship",
+    "Graphic Design",
+    "Photography",
+    "Productivity",
+    "Web Development",
+    "Data Science",
+    "Cooking",
+  ];
+
   return (
-    <section className="py-24 bg-blue-100">
-      <div className="max-w-7xl mx-auto px-4">
+    <section className="w-full bg-white">
 
-        <h3 className="text-center text-2xl md:text-3xl font-semibold text-sky-800 mb-8">
-          100+ tour packages waiting for you
-        </h3>
-
-        <div className="relative overflow-hidden rounded-[80px] h-65 sm:h-60 md:h-80 lg:h-96">
-
-          {/* Background Slider */}
-          <Swiper
-            modules={[Autoplay]}
-            autoplay={{
-              delay: 1000,
-              disableOnInteraction: false,
-            }}
-            speed={1200}
-            loop
-            slidesPerView={1}
-            className="absolute inset-0 z-0"
+      {/* ================= LOGO SECTION ================= */}
+      <div className="w-full bg-[#faf7f8]">
+        <div
+          className="
+            max-w-[1120px]
+            mx-auto
+            px-6
+            h-[200px]
+            flex
+            items-center
+            justify-center
+          "
+        >
+          <div
+            className="
+              w-full
+              flex
+              flex-wrap
+              items-center
+              justify-between
+              gap-x-8
+              gap-y-6
+            "
           >
-            {[bg1, bg2, bg3].map((img, i) => (
-              <SwiperSlide key={i}>
-                <img
-                  src={img}
-                  alt="Package Background"
-                  className="w-full h-full object-cover"
-                />
-              </SwiperSlide>
+            {logos.map((logo, index) => (
+              <img
+                key={index}
+                src={logo}
+                alt={`Partner logo ${index + 1}`}
+                className="
+                  h-[42px]
+                  w-auto
+                  max-w-[170px]
+                  object-contain
+                  opacity-75
+                "
+              />
             ))}
-          </Swiper>
-
-          {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/30 z-10"></div>
-
-          {/* Center Transparent Title */}
-          <div className="absolute inset-0 z-30 flex  justify-center pointer-events-none">
-            <h2 className="text-3xl md:text-5xl font-bold text-white/80 mt-10 md:mt-16 lg:mt-20">
-              Enjoy your trip
-            </h2>
           </div>
+        </div>
+      </div>
 
-          {/* Girl Image */}
-          <div className="absolute mt-6  inset-0 z-20 flex items-end justify-center pointer-events-none">
-            <img
-              src={woman}
-              alt="Traveler"
-              className="h-[120%] object-contain mb-[-9%]" 
-            />
+      {/* ================= DISCOVER SECTION ================= */}
+      <div className="w-full bg-white">
+
+        <div
+          className="
+            max-w-[1050px]
+            mx-auto
+            px-6
+            pt-[72px]
+            pb-[45px]
+            text-center
+          "
+        >
+
+          {/* Heading */}
+          <h2
+            className="
+              max-w-[650px]
+              mx-auto
+              text-[#08091c]
+              text-[36px]
+              md:text-[44px]
+              leading-[1.15]
+              font-bold
+              tracking-[-1.5px]
+            "
+          >
+            Discover Your Passion,
+            <br />
+            Build Your Skills
+          </h2>
+
+          {/* Description */}
+          <p
+            className="
+              max-w-[900px]
+              mx-auto
+              mt-[25px]
+              text-[#92909a]
+              text-[14px]
+              md:text-[16px]
+              leading-[1.8]
+              font-normal
+            "
+          >
+            At Bytespace Courses, we bring you closer to life-changing
+            knowledge. Explore a variety of courses across different
+            <br className="hidden md:block" />
+            fields, from technology to the arts, and make a difference in your
+            career and life.
+          </p>
+
+          {/* ================= CATEGORY BUTTONS ================= */}
+          <div
+            className="
+              mt-[42px]
+              flex
+              flex-wrap
+              items-center
+              justify-center
+              gap-[10px]
+              max-w-[930px]
+              mx-auto
+            "
+          >
+            {categories.map((category, index) => (
+              <button
+                key={category}
+                type="button"
+                className={`
+                  rounded-full
+                  px-[17px]
+                  py-[11px]
+                  text-[14px]
+                  leading-none
+                  whitespace-nowrap
+                  transition-all
+                  duration-200
+                  ${
+                    index === 0
+                      ? "bg-[#dfff3f] text-[#151515]"
+                      : "bg-[#f8f5f6] text-[#4d4b54] hover:bg-[#dfff3f]"
+                  }
+                `}
+              >
+                {category}
+              </button>
+            ))}
+
+            {/* More */}
+            <button
+              type="button"
+              className="
+                px-[7px]
+                py-[11px]
+                text-[14px]
+                text-[#2446d8]
+                whitespace-nowrap
+                hover:text-[#1733b5]
+                transition
+              "
+            >
+              + More
+            </button>
           </div>
 
         </div>
       </div>
-      <br />
-      <br />
-      <h2 className="text-center text-sky-800 font-semibold text-2xl "> ─── Your Trusted Travel Partner ───
-</h2>
 
     </section>
   );
