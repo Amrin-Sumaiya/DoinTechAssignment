@@ -3,7 +3,7 @@ import Header from '../components/Header'
 import Hero from '../components/Hero'
 import AboutUs from '../components/AboutUs'
 import Services from '../components/Services'
-import WhyChooseUs from '../components/WhyChooseUs'
+import Creatorbyte from '../components/creatorByte'
 import Packages from '../components/Packages'
 import TutorialCard from '../components/TutorialCard'
 import CallToAction from '../components/CallToAction' 
@@ -21,7 +21,7 @@ const HomePage = () => {
     <Services />
      <AboutUs />
    
-    <WhyChooseUs />
+    <Creatorbyte />
     
     <CallToAction />
     <Footer />

@@ -43,17 +43,31 @@ const AboutUs = () => {
     pointer-events-none
   "
 />
+{/* Bottom Left Lime Glow - Girl Area */}
+<div
+  className="
+    absolute
+    left-[-120px]
+    bottom-[120px]
+    w-[420px]
+    h-[420px]
+    rounded-full
+    bg-[#dfff3f]/25
+    blur-[100px]
+    pointer-events-none
+  "
+/>
 
       <div
         className="
           absolute
-          right-[-100px]
+          right-[-80px]
           bottom-[-40px]
           w-[350px]
           h-[350px]
           rounded-full
-          bg-[#dfe4ff]
-          blur-[100px]
+          bg-[#dfe4ff]/70
+          blur-[110px]
           pointer-events-none
         "
       />
@@ -297,10 +311,11 @@ const AboutUs = () => {
     <div
       className="
         absolute
-        z-20
-        left-[0px]
-        top-[40px]
-        w-[120px]
+        z-0
+        left-[-40px]
+        top-[20px]
+        w-[180px]
+        h-[110px]
         rounded-[9px]
         bg-[#2145df]
         px-[10px]
@@ -309,15 +324,15 @@ const AboutUs = () => {
         shadow-lg
       "
     >
-      <p className="text-[6px]">
+      <p className="text-[18px]">
         Total Revenue
       </p>
 
-      <p className="text-[6px] text-white/70">
+      <p className="text-[10px] text-white/70">
         July 2024
       </p>
 
-      <p className="mt-[4px] text-[13px] font-semibold">
+      <p className="mt-[4px] text-[18px] font-semibold">
         $120.29
       </p>
 
@@ -329,10 +344,11 @@ const AboutUs = () => {
     <div
       className="
         absolute
-        z-20
-        left-[0px]
-        top-[125px]
+        z-0
+        left-[-45px]
+        top-[165px]
         w-[120px]
+        h-[130px]
         rounded-[9px]
         bg-[#2145df]
         px-[10px]
@@ -341,15 +357,15 @@ const AboutUs = () => {
         shadow-lg
       "
     >
-      <p className="text-[6px]">
+      <p className="text-[16px]">
         Year to Date
       </p>
 
-      <p className="text-[6px] text-white/70">
-        2024
+      <p className="text-[10px] text-white/70">
+        2023
       </p>
 
-      <p className="mt-[4px] text-[12px] font-semibold">
+      <p className="mt-[4px] text-[18px] font-semibold">
         $1,200.38
       </p>
 
@@ -361,11 +377,11 @@ const AboutUs = () => {
           bg-[#dfff3f]
           px-[5px]
           py-[2px]
-          text-[6px]
+          text-[16px]
           text-[#222]
         "
       >
-        +2%
+        +12$
       </span>
     </div>
 
@@ -380,7 +396,7 @@ const AboutUs = () => {
         left-[-25px]
         bottom-[-80px]
         h-[360px]
-        md:h-[550px]
+        md:h-[580px]
         w-auto
         object-contain
         drop-shadow-[0_20px_20px_rgba(0,0,0,0.18)]
@@ -395,9 +411,9 @@ const AboutUs = () => {
       className="
         absolute
         z-20
-        left-[185px]
-        top-[75px]
-        w-[100px]
+        left-[225px]
+        top-[65px]
+        w-[200px]
         h-auto
         object-contain
         pointer-events-none
@@ -410,9 +426,9 @@ const AboutUs = () => {
       className="
         absolute
         z-30
-        right-[0px]
-        bottom-[45px]
-        w-[145px]
+        right-[140px]
+        bottom-[85px]
+        w-[195px]
         rounded-[10px]
         bg-white
         px-[10px]
@@ -421,16 +437,16 @@ const AboutUs = () => {
       "
     >
 
-      <p className="text-[7px] text-[#444]">
+      <p className="text-[17px] text-black font-semibold">
         Happy Students
       </p>
 
       <div className="mt-[2px] flex items-center gap-[3px]">
-        <span className="text-[7px] text-[#777]">
-          4.5
+        <span className="text-[17px] text-black font-semibold">
+          4.5(240)
         </span>
 
-        <span className="text-[9px] text-[#c7c7c7]">
+        <span className="text-[19px] text-[#d5e584]">
           ★
         </span>
       </div>
@@ -500,8 +516,8 @@ const AboutUs = () => {
     <h2
       className="
         text-[#101124]
-        text-[32px]
-        md:text-[36px]
+        text-[42px]
+        md:text-[46px]
         leading-[1.15]
         font-bold
         tracking-[-1px]
@@ -516,8 +532,8 @@ const AboutUs = () => {
     <p
       className="
         mt-[21px]
-        text-[11px]
-        md:text-[12px]
+        text-[18px]
+        md:text-[16px]
         leading-[1.7]
         text-[#777681]
         max-w-[420px]
@@ -526,8 +542,7 @@ const AboutUs = () => {
       <span className="font-semibold text-[#222]">
         ByteSpace
       </span>{" "}
-      supports individuals or entities in the creation, publication,
-      and administration of educational courses.
+ supports individuals or entities in the creation, publication, and administration of educational courses. 
     </p>
 
 
@@ -536,52 +551,52 @@ const AboutUs = () => {
     <div className="mt-[22px] space-y-[10px]">
 
       <div className="flex items-center gap-[8px]">
-        <div className="w-[12px] h-[12px] rounded-full bg-[#2145df] flex items-center justify-center flex-shrink-0">
+        <div className="w-[16px] h-[18px] rounded-full bg-[#2145df] flex items-center justify-center flex-shrink-0">
           <span className="text-[8px] text-white font-bold">
             ✓
           </span>
         </div>
 
-        <span className="text-[10px] text-[#333]">
+        <span className="text-[18px] text-black font-medium">
           Share Your Expertise
         </span>
       </div>
 
 
       <div className="flex items-center gap-[8px]">
-        <div className="w-[12px] h-[12px] rounded-full bg-[#2145df] flex items-center justify-center flex-shrink-0">
+        <div className="w-[16px] h-[18px] rounded-full bg-[#2145df] flex items-center justify-center flex-shrink-0">
           <span className="text-[8px] text-white font-bold">
             ✓
           </span>
         </div>
 
-        <span className="text-[10px] text-[#333]">
+        <span className="text-[18px] text-black font-medium">
           Monetize Your Passion
         </span>
       </div>
 
 
       <div className="flex items-center gap-[8px]">
-        <div className="w-[12px] h-[12px] rounded-full bg-[#2145df] flex items-center justify-center flex-shrink-0">
+        <div className="w-[16px] h-[18px] rounded-full bg-[#2145df] flex items-center justify-center flex-shrink-0">
           <span className="text-[8px] text-white font-bold">
             ✓
           </span>
         </div>
 
-        <span className="text-[10px] text-[#333]">
+        <span className="text-[18px] text-black font-medium">
           Flexibility and Autonomy
         </span>
       </div>
 
 
       <div className="flex items-center gap-[8px]">
-        <div className="w-[12px] h-[12px] rounded-full bg-[#2145df] flex items-center justify-center flex-shrink-0">
+        <div className="w-[16px] h-[18px] rounded-full bg-[#2145df] flex items-center justify-center flex-shrink-0">
           <span className="text-[8px] text-white font-bold">
             ✓
           </span>
         </div>
 
-        <span className="text-[10px] text-[#333]">
+        <span className="text-[18px] text-black font-medium">
           Build a Community
         </span>
       </div>
