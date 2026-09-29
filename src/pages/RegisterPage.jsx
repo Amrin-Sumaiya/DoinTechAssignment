@@ -75,7 +75,7 @@ const RegisterPage = () => {
 <a href="/"><img src={logo} alt="ByteSpace" className="absolute z-30 left-[89px] top-[20px] w-[25px] h-[25px] object-contain" /></a>
 
 
-      {/* =========================================================
+      {/* 
           LEFT INTRO TEXT
       ========================================================== */}
       <div
