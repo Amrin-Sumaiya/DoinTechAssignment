@@ -6,7 +6,7 @@ import Services from '../components/Services'
 import Creatorbyte from '../components/creatorByte'
 import Packages from '../components/Packages'
 import TutorialCard from '../components/TutorialCard'
-import CallToAction from '../components/CallToAction' 
+import Lastsection from '../components/lastsection' 
 import Footer from '../components/Footer'
 
 
@@ -23,7 +23,7 @@ const HomePage = () => {
    
     <Creatorbyte />
     
-    <CallToAction />
+    <Lastsection />
     <Footer />
     </>
  
