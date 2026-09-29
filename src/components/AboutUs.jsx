@@ -28,7 +28,7 @@ const AboutUs = () => {
         md:py-[75px]
       "
     >
-      {/* ================= BACKGROUND GLOW ================= */}
+      {/* BACKGROUND GLOW */}
 
 <div
   className="
@@ -74,9 +74,6 @@ const AboutUs = () => {
 
       <div className="relative max-w-[1200px] mx-auto px-6">
 
-        {/* =====================================================
-            TOP SECTION
-        ====================================================== */}
 
         <div
           className="
@@ -279,10 +276,6 @@ const AboutUs = () => {
           </div>
         </div>
 
-{/* =====================================================
-    BOTTOM SECTION
-====================================================== */}
-
 <div
   className="
     mt-[35px]
@@ -295,7 +288,6 @@ const AboutUs = () => {
   "
 >
 
-  {/* ================= LEFT VISUAL ================= */}
 
   <div
     className="
@@ -307,7 +299,6 @@ const AboutUs = () => {
     "
   >
 
-    {/* Total Revenue */}
     <div
       className="
         absolute
@@ -502,8 +493,6 @@ const AboutUs = () => {
 
   </div>
 
-
-  {/* ================= RIGHT CONTENT ================= */}
 
   <div
     className="

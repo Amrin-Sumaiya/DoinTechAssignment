@@ -38,9 +38,7 @@ const LastSection = () => {
         md:py-[82px]
       "
     >
-      {/* ================= BACKGROUND GLOWS ================= */}
 
-      {/* Center Lime Glow */}
       <div
         className="
           absolute
@@ -56,7 +54,7 @@ const LastSection = () => {
         "
       />
 
-      {/* Bottom Left Blue Glow */}
+
       <div
         className="
           absolute
@@ -71,7 +69,7 @@ const LastSection = () => {
         "
       />
 
-      {/* Bottom Right Soft Glow */}
+
       <div
         className="
           absolute
@@ -86,7 +84,7 @@ const LastSection = () => {
         "
       />
 
-      {/* ================= MAIN CONTAINER ================= */}
+
 
       <div
         className="
@@ -97,7 +95,7 @@ const LastSection = () => {
           px-6
         "
       >
-        {/* ================= TOP CONTENT ================= */}
+
 
         <div
           className="
@@ -150,7 +148,6 @@ const LastSection = () => {
           </div>
         </div>
 
-        {/* ================= TESTIMONIAL CARDS ================= */}
 
         <div
           className="

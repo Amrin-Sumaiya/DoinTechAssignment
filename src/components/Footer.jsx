@@ -35,16 +35,10 @@ const Footer = () => {
   return (
     <footer className="w-full bg-white text-[#333333]">
 
-      {/* =====================================================
-          MAIN FOOTER
-      ====================================================== */}
       <div className="max-w-[1196px] mx-auto  pt-[60px]">
 
         <div className="flex flex-col md:flex-row justify-between">
 
-          {/* =================================================
-              LEFT SIDE
-          ================================================== */}
           <div className="w-full md:w-[390px]">
 
             {/* Logo */}
@@ -122,9 +116,6 @@ const Footer = () => {
 
           </div>
 
-          {/* =================================================
-              RIGHT LINK COLUMNS
-          ================================================== */}
           <div className="mt-10 md:mt-[37px] grid grid-cols-3 gap-x-[58px]">
 
             {linkColumns.map((column, columnIndex) => (
@@ -155,10 +146,6 @@ const Footer = () => {
           </div>
 
         </div>
-
-        {/* =====================================================
-            BOTTOM BAR
-        ====================================================== */}
         <div
           className="
             mt-[97px]

@@ -33,7 +33,6 @@ const Packages = () => {
   return (
     <section className="w-full bg-white">
 
-      {/* ================= LOGO SECTION ================= */}
       <div className="w-full bg-[#faf7f8]">
         <div
           className="
@@ -75,7 +74,6 @@ const Packages = () => {
         </div>
       </div>
 
-      {/* ================= DISCOVER SECTION ================= */}
       <div className="w-full bg-white">
 
         <div
@@ -127,7 +125,7 @@ const Packages = () => {
             career and life.
           </p>
 
-          {/* ================= CATEGORY BUTTONS ================= */}
+
           <div
             className="
               mt-[42px]

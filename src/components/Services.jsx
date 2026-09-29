@@ -42,7 +42,7 @@ const Services = () => {
     >
       <div className="max-w-[1030px] mx-auto px-4">
 
-        {/* ================= HEADING ================= */}
+    
         <div className="text-center">
 
           <h2
@@ -78,7 +78,7 @@ const Services = () => {
 
         </div>
 
-        {/* ================= CATEGORY CARDS ================= */}
+
         <div
           className="
             mt-[58px]
