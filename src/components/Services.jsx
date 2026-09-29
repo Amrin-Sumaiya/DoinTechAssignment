@@ -1,69 +1,159 @@
 import React from "react";
-import { FaPlane, FaHotel, FaPassport, FaMapMarkedAlt, FaMosque } from "react-icons/fa";
+
+import serv1 from "../assets/serv1.png";
+import serv2 from "../assets/serv2.png";
+import serv3 from "../assets/serv3.png";
+import serv4 from "../assets/serv4.png";
+import serv5 from "../assets/serv5.png";
+import serv6 from "../assets/serv6.png";
 
 const services = [
   {
-    name: "Air Ticketing",
-    icon: <FaPlane size={24} />,
-    details:
-      "Domestic and international flight bookings. Competitive fares with reliable airlines. Assistance with schedule changes and rebooking.",
+    name: "Design",
+    image: serv1,
   },
   {
-    name: "Tour Packages",
-    icon: <FaMapMarkedAlt size={24} />,
-    details:
-      "Domestic tours (Cox’s Bazar and other destinations). International tours (India and selected global destinations). Customized tour packages based on customer needs.",
+    name: "Development",
+    image: serv2,
   },
   {
-    name: "Visa Assistance",
-    icon: <FaPassport size={24} />,
-    details:
-      "Tourist and visit visa processing support. Documentation guidance and application follow-up. Country-specific visa consultancy.",
+    name: "IT & Software",
+    image: serv3,
   },
   {
-    name: "Hotel Reservations",
-    icon: <FaHotel size={24} />,
-    details:
-      "Budget, standard, and premium hotel bookings. Flexible options based on travel plans. Verified accommodation partners.",
+    name: "Business",
+    image: serv4,
   },
   {
-    name: "Hajj & Umrah Services",
-    icon: <FaMosque size={24} />,
-    details:
-      "Complete Umrah packages. Hajj consultancy and guidance. Accommodation and travel coordination.",
+    name: "Marketing",
+    image: serv5,
+  },
+  {
+    name: "Photography",
+    image: serv6,
   },
 ];
 
 const Services = () => {
   return (
-    <section id="visa" className="py-20 bg-blue-100 shadow-2xl">
-      <div className="max-w-7xl mx-auto px-4 text-center">
-        <h3 className="text-3xl md:text-4xl font-bold mb-12 text-sky-800">
-          Our Services Features 
-        </h3>
+    <section
+      id="services"
+      className="w-full bg-white py-[40px] md:py-[42px]"
+    >
+      <div className="max-w-[1030px] mx-auto px-4">
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
-          {services.map((service, i) => (
-            <div key={i} className="flex flex-col items-center">
-              
-              {/* Circle Icon */}
-              <div className="flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 bg-sky-800 rounded-full shadow-md text-white mb-4 hover:scale-110 transition-transform">
-                {service.icon}
+        {/* ================= HEADING ================= */}
+        <div className="text-center">
+
+          <h2
+            className="
+              text-[#08091c]
+              text-[30px]
+              md:text-[32px]
+              font-bold
+              leading-[1.2]
+              tracking-[-1px]
+            "
+          >
+            Explore Diverse Learning Paths at Bytespace
+          </h2>
+
+          <p
+            className="
+              max-w-[780px]
+              mx-auto
+              mt-[15px]
+              text-[#92909a]
+              text-[14px]
+              md:text-[15px]
+              leading-[1.7]
+            "
+          >
+            At Bytespace, we believe in empowering individuals through
+            knowledge. Our diverse range of courses spans various
+            <br className="hidden md:block" />
+            fields, ensuring there's something for everyone. Unleash your
+            potential and explore our carefully curated categories.
+          </p>
+
+        </div>
+
+        {/* ================= CATEGORY CARDS ================= */}
+        <div
+          className="
+            mt-[58px]
+            grid
+            grid-cols-2
+            sm:grid-cols-3
+            lg:grid-cols-6
+            gap-[18px]
+            justify-items-center
+          "
+        >
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="
+                w-full
+                max-w-[142px]
+                h-[142px]
+                rounded-[19px]
+                border
+                border-[#d9d9d9]
+                bg-white
+                flex
+                flex-col
+                items-center
+                justify-center
+                transition-all
+                duration-300
+                hover:-translate-y-1
+                hover:shadow-[0_8px_20px_rgba(0,0,0,0.06)]
+              "
+            >
+
+              {/* Icon Circle */}
+              <div
+                className="
+                  w-[51px]
+                  h-[51px]
+                  rounded-full
+                  bg-[#dfff3f]
+                  flex
+                  items-center
+                  justify-center
+                  mb-[12px]
+                "
+              >
+                <img
+                  src={service.image}
+                  alt={service.name}
+                  className="
+                    w-[27px]
+                    h-[27px]
+                    object-contain
+                  "
+                />
               </div>
 
-              {/* Service Name */}
-              <h4 className="font-semibold text-lg sm:text-xl text-gray-700 mb-2">
+              {/* Category Name */}
+              <h3
+                className="
+                  text-[16px]
+                  font-medium
+                  text-[#222222]
+                  leading-none
+                  text-center
+                  whitespace-nowrap
+                "
+              >
                 {service.name}
-              </h4>
-
-              {/* Service Details as paragraph */}
-              <p className="text-gray-500 text-xs sm:text-sm text-center px-2">
-                {service.details}
-              </p>
+              </h3>
 
             </div>
           ))}
         </div>
+
       </div>
     </section>
   );

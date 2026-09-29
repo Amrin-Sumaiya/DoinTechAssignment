@@ -18,8 +18,9 @@ const HomePage = () => {
    
     <Packages />
     <TutorialCard />
-     <AboutUs />
     <Services />
+     <AboutUs />
+   
     <WhyChooseUs />
     
     <CallToAction />

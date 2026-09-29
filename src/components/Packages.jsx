@@ -63,7 +63,7 @@ const Packages = () => {
                 src={logo}
                 alt={`Partner logo ${index + 1}`}
                 className="
-                  h-[42px]
+                  h-10.5
                   w-auto
                   max-w-[170px]
                   object-contain
