@@ -26,7 +26,7 @@ import man7 from "../assets/man7.png";
 // =========================================================
 // DECORATIVE SHAPES
 // =========================================================
-import olime from "../assets/olime.png";
+import olime from "../assets/olime3.png";
 import freentrinagle from "../assets/trinaglegreen.png";
 import whitelime from "../assets/whitelime.png";
 
@@ -72,19 +72,7 @@ const RegisterPage = () => {
           Raw green logo removed.
           Using logo.png instead.
       ========================================================== */}
-      <img
-        src={logo}
-        alt="ByteSpace"
-        className="
-          absolute
-          z-30
-          left-[89px]
-          top-[20px]
-          w-[25px]
-          h-[25px]
-          object-contain
-        "
-      />
+<a href="/"><img src={logo} alt="ByteSpace" className="absolute z-30 left-[89px] top-[20px] w-[25px] h-[25px] object-contain" /></a>
 
 
       {/* =========================================================
@@ -139,9 +127,9 @@ const RegisterPage = () => {
         className="
           absolute
           z-0
-          left-[99px]
+          left-[159px]
           top-[244px]
-          w-[300px]
+          w-[340px]
           rounded-[20px]
           border
           border-[#d9d9d9]
@@ -470,8 +458,8 @@ const RegisterPage = () => {
         className="
           absolute
           z-30
-          left-[192px]
-          top-[120px]
+          left-[272px]
+          top-[130px]
           w-[380px]
           rounded-[20px]
           border
@@ -805,10 +793,10 @@ const RegisterPage = () => {
         className="
           absolute
           z-40
-          left-[80px]
-          top-[91px]
-          w-[108px]
-          h-[102px]
+          left-[170px]
+          top-[140px]
+          w-[168px]
+          h-[172px]
           object-contain
           pointer-events-none
         "
@@ -824,8 +812,8 @@ const RegisterPage = () => {
         className="
           absolute
           z-50
-          left-[423px]
-          top-[419px]
+          left-[483px]
+          top-[479px]
           w-[125px]
           h-[135px]
           object-contain
@@ -860,8 +848,8 @@ const RegisterPage = () => {
         className="
           absolute
           z-50
-          left-[268px]
-          top-[511px]
+          left-[368px]
+          top-[581px]
           w-[274px]
           h-[130px]
           rounded-[13px]
