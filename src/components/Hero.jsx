@@ -10,6 +10,13 @@ import man5 from "../assets/man5.png";
 import man6 from "../assets/man6.png";
 import man7 from "../assets/man7.png";
 
+
+import lime from "../assets/lime.png";
+import trianglewhite from "../assets/trianglewhite.png";
+import olime from "../assets/olime2.png";
+import whitelime from "../assets/whitelime.png";
+import greensquare from "../assets/greensquare.png";
+
 const Hero = () => {
   return (
     <section
@@ -173,8 +180,8 @@ const Hero = () => {
           left-1/2
           -translate-x-1/2
           top-[343px]
-          w-[650px]
-          h-[650px]
+          w-[750px]
+          h-[750px]
           rounded-full
           bg-[#dfff3f]
         "
@@ -184,214 +191,114 @@ const Hero = () => {
           LEFT LIME DECORATION
       ========================================================== */}
 
-      <div
-        className="
-          absolute
-          z-30
-          left-[-20px]
-          top-[169px]
-          w-[112px]
-          h-[43px]
-          rounded-full
-          bg-[#dfff3f]
-          rotate-[10deg]
-        "
-      />
-
-      <div
-        className="
-          absolute
-          z-30
-          left-[-22px]
-          top-[207px]
-          w-[111px]
-          h-[42px]
-          rounded-full
-          bg-[#dfff3f]
-          rotate-[28deg]
-        "
-      />
-
-      <div
-        className="
-          absolute
-          z-30
-          left-[-51px]
-          top-[249px]
-          w-[108px]
-          h-[41px]
-          rounded-full
-          bg-[#dfff3f]
-          rotate-[28deg]
-        "
-      />
-
-      <div
-        className="
-          absolute
-          z-30
-          left-[-58px]
-          top-[290px]
-          w-[100px]
-          h-[38px]
-          rounded-full
-          bg-[#dfff3f]
-          rotate-[28deg]
-        "
-      />
+<img
+  src={lime}
+  alt=""
+  className="
+    absolute
+    z-30
+    left-[-120px]
+    top-[95px]
+    w-[380px]
+    h-[320px]
+    object-contain
+    pointer-events-none
+  "
+/>
 
       {/* =========================================================
           LEFT WHITE ABSTRACT STROKES
       ========================================================== */}
-
-      <div
-        className="
-          absolute
-          z-30
-          left-[123px]
-          top-[299px]
-          w-[48px]
-          h-[15px]
-          bg-white
-          rounded-full
-          rotate-[-18deg]
-        "
-      />
-
-      <div
-        className="
-          absolute
-          z-30
-          left-[130px]
-          top-[316px]
-          w-[54px]
-          h-[15px]
-          bg-white
-          rounded-full
-          rotate-[22deg]
-        "
-      />
-
-      <div
-        className="
-          absolute
-          z-30
-          left-[137px]
-          top-[334px]
-          w-[56px]
-          h-[15px]
-          bg-white
-          rounded-full
-          rotate-[-26deg]
-        "
-      />
-
-      <div
-        className="
-          absolute
-          z-30
-          left-[143px]
-          top-[352px]
-          w-[52px]
-          h-[15px]
-          bg-white
-          rounded-full
-          rotate-[-38deg]
-        "
-      />
+<img
+  src={whitelime}
+  alt=""
+  className="
+    absolute
+    z-30
+    left-[295px]
+    top-[315px]
+    w-[135px]
+    h-[140px]
+    object-contain
+    pointer-events-none
+  "
+/>
 
       {/* =========================================================
           RIGHT LIME DECORATION
       ========================================================== */}
 
-      <div
-        className="
-          absolute
-          z-20
-          right-[-40px]
-          top-[151px]
-          w-[105px]
-          h-[166px]
-          bg-[#dfff3f]
-          rounded-[28px]
-          rotate-[-27deg]
-        "
-      />
+<img
+  src={greensquare}
+  alt=""
+  className="
+    absolute
+    z-20
+    right-[-40px]
+    top-[155px]
+    w-[190px]
+    h-[285px]
+    object-contain
+    pointer-events-none
+  "
+/>
 
       {/* =========================================================
           RIGHT WHITE TRIANGLE
       ========================================================== */}
 
-      <div
-        className="
-          absolute
-          z-30
-          right-[108px]
-          top-[285px]
-          w-0
-          h-0
-          border-l-[37px]
-          border-r-[37px]
-          border-b-[69px]
-          border-l-transparent
-          border-r-transparent
-          border-b-white
-          rotate-[13deg]
-        "
-      />
+<img
+  src={trianglewhite}
+  alt=""
+  className="
+    absolute
+    z-30
+    right-[265px]
+    top-[280px]
+    w-[115px]
+    h-[230px]
+    object-contain
+    pointer-events-none
+  "
+/>
 
       {/* =========================================================
           LARGE LEFT WHITE OVAL
       ========================================================== */}
 
-      <div
-        className="
-          absolute
-          z-20
-          left-[35px]
-          top-[435px]
-          w-[138px]
-          h-[112px]
-          bg-white
-          rounded-[50%]
-          rotate-[-20deg]
-        "
-      >
-        <div
-          className="
-            absolute
-            left-[38px]
-            top-[29px]
-            w-[64px]
-            h-[46px]
-            bg-[#243ed4]
-            rounded-[50%]
-            rotate-[12deg]
-          "
-        />
-      </div>
+<img
+  src={olime}
+  alt=""
+  className="
+    absolute
+    z-20
+    left-[30px]
+    top-[425px]
+    w-[290px]
+    h-[290px]
+    object-contain
+    pointer-events-none
+  "
+/>
 
       {/* =========================================================
           RIGHT WHITE ABSTRACT STROKES
       ========================================================== */}
 
-      <div
-        className="
-          absolute
-          z-30
-          right-[48px]
-          top-[418px]
-          rotate-[-12deg]
-        "
-      >
-        <div className="w-[65px] h-[17px] bg-white rounded-full rotate-[-20deg]" />
-
-        <div className="w-[73px] h-[17px] bg-white rounded-full mt-[1px] ml-[-6px] rotate-[21deg]" />
-
-        <div className="w-[80px] h-[17px] bg-white rounded-full mt-[1px] ml-[-9px] rotate-[-20deg]" />
-
-        <div className="w-[76px] h-[17px] bg-white rounded-full mt-[1px] ml-[-4px] rotate-[19deg]" />
-      </div>
+ <img
+  src={whitelime}
+  alt=""
+  className="
+    absolute
+    z-30
+    right-[35px]
+    top-[530px]
+    w-[295px]
+    h-[265px]
+    object-contain
+    pointer-events-none
+  "
+/>
 
       {/* =========================================================
           MAIN BOY
@@ -427,7 +334,7 @@ const Hero = () => {
           left-[33%]
           top-[420px]
           w-[170px]
-          h-[62px]
+          h-[72px]
           rounded-[9px]
           bg-white
           shadow-lg
@@ -436,11 +343,11 @@ const Hero = () => {
           text-black
         "
       >
-        <p className="text-[15px] font-medium leading-none">
+        <p className="text-[16px] font-medium leading-none">
           UI/UX Design
         </p>
 
-        <p className="text-[8px] text-gray-400 mt-[8px]">
+        <p className="text-[10px] text-gray-400 mt-[8px]">
           20 Courses • 1000+ Students
         </p>
       </div>
@@ -455,8 +362,8 @@ const Hero = () => {
           z-50
           right-[33.5%]
           top-[435px]
-          w-[149px]
-          h-[95px]
+          w-[159px]
+          h-[100px]
           rounded-[9px]
           bg-white
           shadow-lg
@@ -465,7 +372,7 @@ const Hero = () => {
           text-black
         "
       >
-        <p className="text-[14px] text-gray-500">
+        <p className="text-[16px] text-gray-500">
           Learning Progress
         </p>
 
@@ -489,7 +396,7 @@ const Hero = () => {
           left-[20.5%]
           top-[552px]
           w-[321px]
-          h-[111px]
+          h-[118px]
           rounded-[10px]
           bg-white
           shadow-lg
@@ -498,11 +405,11 @@ const Hero = () => {
           text-black
         "
       >
-        <p className="text-[15px] font-medium">
+        <p className="text-[18px] font-medium">
           Happy Students
         </p>
 
-        <p className="text-[6px] text-gray-400 mt-[2px]">
+        <p className="text-[16px] text-gray-400 mt-[2px]">
           4.5 (240) ★
         </p>
 
@@ -606,13 +513,13 @@ const Hero = () => {
             className="
              -ml-[6px]
               w-[45px]
-              h-[45px]
+              h-[42px]
               rounded-full
               bg-[#dfff3f]
               flex
               items-center
               justify-center
-              text-[6px]
+              text-[9px]
               font-bold
             "
           >
