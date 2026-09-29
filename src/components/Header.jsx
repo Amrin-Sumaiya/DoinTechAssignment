@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { FiMenu, FiX, FiShoppingBag } from "react-icons/fi";
 import logo from "../assets/logo.png";
 
@@ -42,12 +43,31 @@ const Header = () => {
 
         {/* Right Menu */}
         <div className="hidden md:flex items-center gap-5 text-[16px]">
-          <a
-            href="#signin"
-            className="hover:text-[#dfff3f] transition"
-          >
-            Sign In
-          </a>
+<div className="relative group">
+  <button className="hover:text-[#dfff3f] transition">
+    Sign In
+  </button>
+
+  <div className="absolute right-0 top-full pt-3 hidden group-hover:block">
+    <div className="w-36 bg-white text-gray-800 rounded-lg shadow-lg overflow-hidden">
+      
+      <Link
+        to="/login"
+        className="block px-5 py-3 hover:bg-lime-400 hover:text-white transition"
+      >
+        Login
+      </Link>
+
+      <Link
+        to="/register"
+        className="block px-5 py-3 hover:bg-lime-400 hover:text-white transition"
+      >
+        Register
+      </Link>
+
+    </div>
+  </div>
+</div>
 
           <a
             href="#join"
