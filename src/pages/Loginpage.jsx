@@ -1,11 +1,995 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
+import { FiBarChart2, FiStar } from "react-icons/fi";
+import { FaFacebookF, FaGoogle } from "react-icons/fa";
 
-const Loginpage = () => {
+import logo from "../assets/logo.png";
+
+// Course images
+import card3 from "../assets/cardp.jpg";
+import card4 from "../assets/card2.png";
+
+// Student images
+import man1 from "../assets/man1.png";
+import man2 from "../assets/man2.png";
+import man3 from "../assets/man3.png";
+import man4 from "../assets/man4.png";
+import man5 from "../assets/man5.png";
+import man6 from "../assets/man6.png";
+import olime from "../assets/olime3.png";
+import freentrinagle from "../assets/trinaglegreen.png";
+import whitelime from "../assets/whitelime.png";
+
+const LoginPage = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <main className="min-h-[100dvh] w-full overflow-hidden bg-[#243ed4] text-white">
 
-export default Loginpage
+
+      <section
+        className="relative min-h-[100dvh] w-full"
+        style={{
+          backgroundImage: `
+            linear-gradient(
+              to right,
+              rgba(255,255,255,0.09) 1px,
+              transparent 1px
+            ),
+            linear-gradient(
+              to bottom,
+              rgba(255,255,255,0.09) 1px,
+              transparent 1px
+            )
+          `,
+          backgroundSize: "72px 72px",
+        }}
+      >
+
+        <div
+          className="
+            relative
+            mx-auto
+            flex
+            min-h-[100dvh]
+            w-full
+            max-w-[1400px]
+            items-center
+            justify-between
+            px-8
+            py-8
+            xl:px-14
+            2xl:px-16
+          "
+        >
+
+          <div
+            className="
+              relative
+              h-[620px]
+              max-w-[720px]
+              flex-1
+            "
+          >
+
+
+            <Link
+              to="/"
+              className="
+                absolute
+                left-[12px]
+                top-[-15px]
+                z-50
+              "
+            >
+              <img
+                src={logo}
+                alt="ByteSpace"
+                className="
+                  h-[42px]
+                  w-[42px]
+                  object-contain
+                "
+              />
+            </Link>
+
+            <div
+              className="
+                absolute
+                left-3
+                top-[49px]
+                z-40
+                w-[390px]
+              "
+            >
+
+              <h2
+                className="
+                  text-[20px]
+                  font-semibold
+                  leading-[1.25]
+                "
+              >
+                Welcome back
+              </h2>
+
+              <p
+                className="
+                  mt-2
+                  max-w-[390px]
+                  text-[13px]
+                  leading-[1.65]
+                  text-white/80
+                "
+              >
+                Sign in to continue your learning journey
+                and access all your courses, creators, and
+                personalized content.
+              </p>
+
+            </div>
+
+
+            <div
+              className="
+                absolute
+                left-[-15px]
+                top-[165px]
+                h-[430px]
+                w-[620px]
+              "
+            >
+
+              <div
+                className="
+                  absolute
+                  left-0
+                  top-[55px]
+                  z-10
+                  w-[330px]
+                  rounded-[20px]
+                  border
+                  border-[#dedede]
+                  bg-white
+                  p-[10px]
+                  text-black
+                  shadow-sm
+                "
+              >
+
+                <div
+                  className="
+                    h-[190px]
+                    overflow-hidden
+                    rounded-[13px]
+                  "
+                >
+                  <img
+                    src={card4}
+                    alt="Build Digital Asset"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+
+                <div className="mt-3">
+
+                  <h3 className="text-[17px] font-semibold">
+                    Build Digital Asset
+                  </h3>
+
+                  <p className="mt-1 text-[9px] text-gray-500">
+                    by{" "}
+                    <span className="text-[#3157df]">
+                      purepearl studio
+                    </span>
+                  </p>
+
+                  <div className="mt-3 flex items-center justify-between">
+
+                    <div
+                      className="
+                        flex
+                        items-center
+                        gap-1
+                        rounded-full
+                        bg-[#f7f4f5]
+                        px-3
+                        py-1.5
+                      "
+                    >
+                      <FiBarChart2
+                        size={12}
+                        className="text-gray-500"
+                      />
+
+                      <span className="text-[9px] text-gray-500">
+                        Beginner
+                      </span>
+                    </div>
+
+
+                    <div className="flex items-center">
+
+                      <img
+                        src={man1}
+                        alt=""
+                        className="
+                          h-7
+                          w-7
+                          rounded-full
+                          border-2
+                          border-white
+                          object-cover
+                        "
+                      />
+
+                      <img
+                        src={man2}
+                        alt=""
+                        className="
+                          -ml-1.5
+                          h-7
+                          w-7
+                          rounded-full
+                          border-2
+                          border-white
+                          object-cover
+                        "
+                      />
+
+                      <img
+                        src={man3}
+                        alt=""
+                        className="
+                          -ml-1.5
+                          h-7
+                          w-7
+                          rounded-full
+                          border-2
+                          border-white
+                          object-cover
+                        "
+                      />
+
+                      <div
+                        className="
+                          -ml-1.5
+                          flex
+                          h-7
+                          w-7
+                          items-center
+                          justify-center
+                          rounded-full
+                          border-2
+                          border-white
+                          bg-black
+                          text-[7px]
+                          text-white
+                        "
+                      >
+                        26+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+
+                  <div className="mt-3">
+
+                    <span className="text-[19px] font-bold text-[#1746e8]">
+                      $25
+                    </span>
+
+                    <span className="ml-1 text-[9px] text-gray-500">
+                      /lifetime
+                    </span>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div
+                className="
+                  absolute
+                  left-[105px]
+                  top-[-25px]
+                  z-30
+                  w-[380px]
+                  rounded-[20px]
+                  border
+                  border-[#dedede]
+                  bg-white
+                  p-[10px]
+                  text-black
+                  shadow-sm
+                "
+              >
+
+                <div
+                  className="
+                    relative
+                    h-[205px]
+                    overflow-hidden
+                    rounded-[13px]
+                  "
+                >
+
+                  <img
+                    src={card3}
+                    alt="The Power of Big Data"
+                    className="h-full w-full object-cover"
+                  />
+
+                  <div
+                    className="
+                      absolute
+                      inset-x-0
+                      bottom-0
+                      h-16
+                      bg-gradient-to-t
+                      from-black/40
+                      to-transparent
+                    "
+                  />
+
+                  {/* Course information pills */}
+
+                  <div
+                    className="
+                      absolute
+                      bottom-4
+                      left-3
+                      flex
+                      items-center
+                      gap-[6px]
+                    "
+                  >
+
+                    <span
+                      className="
+                        rounded-full
+                        bg-white/90
+                        px-3
+                        py-1.5
+                        text-[8px]
+                        text-gray-600
+                      "
+                    >
+                      17 Lessons
+                    </span>
+
+                    <span
+                      className="
+                        rounded-full
+                        bg-white/90
+                        px-3
+                        py-1.5
+                        text-[8px]
+                        text-gray-600
+                      "
+                    >
+                      2 hours 16 mins
+                    </span>
+
+                    <span
+                      className="
+                        rounded-full
+                        bg-white/90
+                        px-3
+                        py-1.5
+                        text-[8px]
+                        text-gray-600
+                      "
+                    >
+                      59 Comments
+                    </span>
+
+                  </div>
+
+                </div>
+
+
+                <div className="mt-4 flex items-center justify-between">
+
+                  <h3 className="text-[19px] font-semibold">
+                    the Power of Big Data
+                  </h3>
+
+                  <div className="flex items-center gap-1">
+
+                    <span className="text-[15px] text-gray-500">
+                      4.5
+                    </span>
+
+                    <FiStar
+                      size={17}
+                      className="text-[#dfff3f]"
+                      fill="currentColor"
+                    />
+
+                  </div>
+
+                </div>
+
+
+                <p className="mt-1 text-[9px] text-gray-500">
+                  by{" "}
+                  <span className="text-[#3157df]">
+                    purepearl studio
+                  </span>
+                </p>
+
+
+                <div className="mt-3 flex items-center justify-between">
+
+                  <div
+                    className="
+                      flex
+                      items-center
+                      gap-1.5
+                      rounded-full
+                      bg-[#f7f4f5]
+                      px-3
+                      py-1.5
+                    "
+                  >
+
+                    <FiBarChart2
+                      size={13}
+                      className="text-gray-500"
+                    />
+
+                    <span className="text-[9px] text-gray-500">
+                      Beginner
+                    </span>
+
+                  </div>
+
+
+                  <div className="flex items-center">
+
+                    <img
+                      src={man1}
+                      alt=""
+                      className="
+                        h-7
+                        w-7
+                        rounded-full
+                        border-2
+                        border-white
+                        object-cover
+                      "
+                    />
+
+                    <img
+                      src={man2}
+                      alt=""
+                      className="
+                        -ml-1.5
+                        h-7
+                        w-7
+                        rounded-full
+                        border-2
+                        border-white
+                        object-cover
+                      "
+                    />
+
+                    <img
+                      src={man3}
+                      alt=""
+                      className="
+                        -ml-1.5
+                        h-7
+                        w-7
+                        rounded-full
+                        border-2
+                        border-white
+                        object-cover
+                      "
+                    />
+
+                    <img
+                      src={man4}
+                      alt=""
+                      className="
+                        -ml-1.5
+                        h-7
+                        w-7
+                        rounded-full
+                        border-2
+                        border-white
+                        object-cover
+                      "
+                    />
+
+                    <div
+                      className="
+                        -ml-1.5
+                        flex
+                        h-8
+                        w-8
+                        items-center
+                        justify-center
+                        rounded-full
+                        border-2
+                        border-white
+                        bg-black
+                        text-[8px]
+                        text-white
+                      "
+                    >
+                      26+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+                <div className="mt-3">
+
+                  <span className="text-[21px] font-bold text-[#1746e8]">
+                    $25
+                  </span>
+
+                  <span className="ml-1 text-[9px] text-gray-500">
+                    /lifetime
+                  </span>
+
+                </div>
+
+              </div>
+
+              <img
+                src={olime}
+                alt=""
+                className="
+                  absolute
+                  left-[25px]
+                  top-[-10px]
+                  z-40
+                  h-[145px]
+                  w-[145px]
+                  object-contain
+                "
+              />
+
+
+              <img
+                src={whitelime}
+                alt=""
+                className="
+                  absolute
+                  left-[390px]
+                  top-[275px]
+                  z-50
+                  h-[125px]
+                  w-[115px]
+                  object-contain
+                "
+              />
+
+              <img
+                src={freentrinagle}
+                alt=""
+                className="
+                  absolute
+                  left-[15px]
+                  top-[335px]
+                  z-40
+                  h-[135px]
+                  w-[125px]
+                  object-contain
+                "
+              />
+
+              <div
+                className="
+                  absolute
+                  left-[230px]
+                  top-[365px]
+                  z-50
+                  w-[270px]
+                  rounded-[13px]
+                  bg-[#dfff3f]
+                  px-4
+                  py-3
+                  text-black
+                  shadow-lg
+                "
+              >
+
+                <p className="text-[14px] font-semibold">
+                  Happy Students
+                </p>
+
+                <p className="mt-1 text-[8px] text-gray-700">
+                  4.5 (240)
+                  <span className="ml-1 text-[#1746e8]">
+                    ★
+                  </span>
+                </p>
+
+                <div className="mt-2 flex items-center">
+
+                  <img
+                    src={man1}
+                    alt=""
+                    className="
+                      h-9
+                      w-9
+                      rounded-full
+                      border-2
+                      border-white
+                      object-cover
+                    "
+                  />
+
+                  <img
+                    src={man2}
+                    alt=""
+                    className="
+                      -ml-1.5
+                      h-9
+                      w-9
+                      rounded-full
+                      border-2
+                      border-white
+                      object-cover
+                    "
+                  />
+
+                  <img
+                    src={man3}
+                    alt=""
+                    className="
+                      -ml-1.5
+                      h-9
+                      w-9
+                      rounded-full
+                      border-2
+                      border-white
+                      object-cover
+                    "
+                  />
+
+                  <img
+                    src={man4}
+                    alt=""
+                    className="
+                      -ml-1.5
+                      h-9
+                      w-9
+                      rounded-full
+                      border-2
+                      border-white
+                      object-cover
+                    "
+                  />
+
+                  <img
+                    src={man5}
+                    alt=""
+                    className="
+                      -ml-1.5
+                      h-9
+                      w-9
+                      rounded-full
+                      border-2
+                      border-white
+                      object-cover
+                    "
+                  />
+
+                  <img
+                    src={man6}
+                    alt=""
+                    className="
+                      -ml-1.5
+                      h-9
+                      w-9
+                      rounded-full
+                      border-2
+                      border-white
+                      object-cover
+                    "
+                  />
+
+                  <div
+                    className="
+                      -ml-1.5
+                      flex
+                      h-10
+                      w-10
+                      items-center
+                      justify-center
+                      rounded-full
+                      border-2
+                      border-white
+                      bg-[#222]
+                      text-[9px]
+                      text-white
+                    "
+                  >
+                    2K+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div
+            className="
+              relative
+              z-40
+              w-[410px]
+              shrink-0
+              rounded-[20px]
+              bg-white
+              text-[#242424]
+              shadow-xl
+
+              xl:w-[430px]
+              2xl:w-[450px]
+            "
+          >
+
+            <div
+              className="
+                px-10
+                pb-10
+                pt-11
+
+                xl:px-11
+              "
+            >
+
+
+              <p
+                className="
+                  text-[12px]
+                  font-medium
+                  text-[#3155e8]
+                "
+              >
+                Sign In
+              </p>
+
+              <h1
+                className="
+                  mt-1
+                  text-[32px]
+                
+                  font-bold
+                  leading-[1.15]
+                  tracking-[-1px]
+                "
+              >
+                Welcome Back
+              </h1>
+
+
+              <div className="mt-8">
+
+                <label
+                  htmlFor="email"
+                  className="
+                    mb-2
+                    block
+                    text-[10px]
+                    font-medium
+                    text-[#222]
+                  "
+                >
+                  Email
+                </label>
+
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="designer@example.com"
+                  className="
+                    h-[43px]
+                    w-full
+                    rounded-[9px]
+                    border
+                    border-[#e2e2e2]
+                    px-4
+                    text-[11px]
+                    text-gray-700
+                    outline-none
+                    transition
+                    focus:border-[#3155e8]
+                  "
+                />
+
+              </div>
+
+              <div className="mt-5">
+
+                <label
+                  htmlFor="password"
+                  className="
+                    mb-2
+                    block
+                    text-[10px]
+                    font-medium
+                    text-[#222]
+                  "
+                >
+                  Password
+                </label>
+
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="**********"
+                  className="
+                    h-[43px]
+                    w-full
+                    rounded-[9px]
+                    border
+                    border-[#e2e2e2]
+                    px-4
+                    text-[11px]
+                    text-gray-700
+                    outline-none
+                    transition
+                    focus:border-[#3155e8]
+                  "
+                />
+
+              </div>
+
+
+              <div className="mt-5 flex justify-end">
+
+                <button
+                  type="button"
+                  className="
+                    rounded-full
+                    bg-[#dfff3f]
+                    px-5
+                    py-2.5
+                    text-[12px]
+                    font-medium
+                    text-black
+                    transition
+                    hover:bg-[#d3f333]
+                  "
+                >
+                  Sign In
+                </button>
+
+              </div>
+
+              <div
+                className="
+                  mt-[57px]
+                  flex
+                  items-center
+                  gap-2
+                "
+              >
+
+                <div className="h-px flex-1 bg-[#dedede]" />
+
+                <span
+                  className="
+                    px-1
+                    text-[11px]
+                    text-[#999]
+                  "
+                >
+                  or
+                </span>
+
+                <div className="h-px flex-1 bg-[#dedede]" />
+
+              </div>
+
+              <div
+                className="
+                  mt-7
+                  flex
+                  items-center
+                  justify-center
+                  gap-3
+                "
+              >
+
+                {/* Facebook */}
+
+                <button
+                  type="button"
+                  aria-label="Continue with Facebook"
+                  className="
+                    flex
+                    h-[51px]
+                    w-[51px]
+                    items-center
+                    justify-center
+                    rounded-[17px]
+                    border
+                    border-[#dedede]
+                    bg-white
+                    text-black
+                    transition
+                    hover:bg-gray-50
+                  "
+                >
+                  <FaFacebookF
+                    size={24}
+                  />
+                </button>
+
+
+                {/* Google */}
+
+                <button
+                  type="button"
+                  aria-label="Continue with Google"
+                  className="
+                    flex
+                    h-[51px]
+                    w-[51px]
+                    items-center
+                    justify-center
+                    rounded-[17px]
+                    border
+                    border-[#dedede]
+                    bg-white
+                    text-black
+                    transition
+                    hover:bg-gray-50
+                  "
+                >
+                  <FaGoogle
+                    size={23}
+                  />
+                </button>
+
+              </div>
+
+              <p
+                className="
+                  mt-[53px]
+                  text-center
+                  text-[10px]
+                  text-gray-400
+                "
+              >
+                New user?{" "}
+
+                <Link
+                  to="/register"
+                  className="
+                    text-[#3155e8]
+                    transition
+                    hover:underline
+                  "
+                >
+                  Create an account
+                </Link>
+
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+  );
+};
+
+export default LoginPage;
