@@ -13,6 +13,9 @@ import man3 from "../assets/man3.png";
 import man4 from "../assets/man4.png";
 import man5 from "../assets/man5.png";
 import man6 from "../assets/man6.png";
+import man8 from "../assets/man8.png";
+import man9 from "../assets/man9.png";
+import people1 from "../assets/people1.png";
 
 
 import olime from "../assets/olime3.png";
@@ -23,9 +26,6 @@ const RegisterPage = () => {
   return (
     <main className="min-h-[100dvh] w-full overflow-hidden bg-[#243ed4] text-white">
 
-      {/* =========================================================
-          BACKGROUND
-      ========================================================== */}
 
       <section
         className="relative min-h-[100dvh] w-full"
@@ -46,14 +46,7 @@ const RegisterPage = () => {
         }}
       >
 
-        {/* =======================================================
-            MAIN DESKTOP CONTAINER
 
-            This is the important part.
-
-            Instead of using the browser width directly,
-            the actual design is kept inside a controlled area.
-        ======================================================== */}
 
         <div
           className="
@@ -73,9 +66,6 @@ const RegisterPage = () => {
           "
         >
 
-          {/* =====================================================
-              LEFT SIDE
-          ====================================================== */}
 
           <div
             className="
@@ -85,10 +75,6 @@ const RegisterPage = () => {
               max-w-[720px]
             "
           >
-
-            {/* ===================================================
-                LOGO
-            ==================================================== */}
 
             <Link
               to="/"
@@ -110,11 +96,6 @@ const RegisterPage = () => {
                 "
               />
             </Link>
-
-
-            {/* ===================================================
-                INTRO TEXT
-            ==================================================== */}
 
             <div
               className="
@@ -153,13 +134,6 @@ const RegisterPage = () => {
             </div>
 
 
-            {/* ===================================================
-                ARTWORK WRAPPER
-
-                Everything on the left stays relative to this
-                area instead of the browser itself.
-            ==================================================== */}
-
             <div
               className="
                 absolute
@@ -170,9 +144,6 @@ const RegisterPage = () => {
               "
             >
 
-              {/* =================================================
-                  BACK CARD
-              ================================================== */}
 
               <div
                 className="
@@ -276,11 +247,6 @@ const RegisterPage = () => {
                 </div>
 
               </div>
-
-
-              {/* =================================================
-                  FRONT CARD
-              ================================================== */}
 
               <div
                 className="
@@ -412,19 +378,19 @@ const RegisterPage = () => {
                     />
 
                     <img
-                      src={man2}
+                      src={man8}
                       className="-ml-1.5 h-7 w-7 rounded-full border-2 border-white object-cover"
                       alt=""
                     />
 
                     <img
-                      src={man3}
+                      src={people1}
                       className="-ml-1.5 h-7 w-7 rounded-full border-2 border-white object-cover"
                       alt=""
                     />
 
                     <img
-                      src={man4}
+                      src={man9}
                       className="-ml-1.5 h-7 w-7 rounded-full border-2 border-white object-cover"
                       alt=""
                     />

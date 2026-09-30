@@ -5,17 +5,20 @@ import { FaFacebookF, FaGoogle } from "react-icons/fa";
 
 import logo from "../assets/logo.png";
 
-// Course images
+
 import card3 from "../assets/cardp.jpg";
 import card4 from "../assets/card2.png";
 
-// Student images
+
 import man1 from "../assets/man1.png";
 import man2 from "../assets/man2.png";
 import man3 from "../assets/man3.png";
 import man4 from "../assets/man4.png";
 import man5 from "../assets/man5.png";
 import man6 from "../assets/man6.png";
+import man8 from "../assets/man8.png";
+import man9 from "../assets/man9.png";
+import people1 from "../assets/people1.png";
 import olime from "../assets/olime3.png";
 import freentrinagle from "../assets/trinaglegreen.png";
 import whitelime from "../assets/whitelime.png";
@@ -463,7 +466,7 @@ const LoginPage = () => {
                     />
 
                     <img
-                      src={man2}
+                      src={man8}
                       alt=""
                       className="
                         -ml-1.5
@@ -477,7 +480,7 @@ const LoginPage = () => {
                     />
 
                     <img
-                      src={man3}
+                      src={people1}
                       alt=""
                       className="
                         -ml-1.5
@@ -491,7 +494,7 @@ const LoginPage = () => {
                     />
 
                     <img
-                      src={man4}
+                      src={man9}
                       alt=""
                       className="
                         -ml-1.5
